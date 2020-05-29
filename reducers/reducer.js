@@ -3,10 +3,14 @@ const initialState = {
 }
 
 const reducer = (state = initialState, action) => {
-    switch (action) {
+    switch (action.type) {
         case 'ADD_TODO':
-            // I will do return state first
-            return state 
+            
+            const newItem = { id: 1, name: action.text };
+          
+            const newArray = [...state.todos, newItem];
+   
+            return {...state,todos:newArray}
         default:
             return state;
     }

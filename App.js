@@ -15,7 +15,9 @@ export default function App() {
 
 // Remaining things to do :
 
-// Linking
+
 // mapStateToProps
 // mapDispatchToProps
 // New thing - passing data from component to reducer
+// Linking
+//Bring out item from reducers
